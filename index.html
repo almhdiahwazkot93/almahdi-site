@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>حسینیة المهدیة (عجل الله تعالی فرجه الشریف)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- فونت فارسی نستعلیق -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Vazir', Tahoma, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 2;
+    }
+    header {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      padding: 90px 20px;
+      text-align: center;
+    }
+    header .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    header h1 {
+      position: relative;
+      z-index: 1;
+      font-family: 'Vazir', 'IranNastaliq', serif;
+      font-size: 48px;
+      font-weight: bold;
+      color: #eab308;
+      margin: 0;
+      text-shadow: 2px 2px 4px #000;
+    }
+    header h2 {
+      position: relative;
+      z-index: 1;
+      font-family: 'Vazir', 'IranNastaliq', serif;
+      font-size: 20px;
+      color: #f8fafc;
+      margin: 5px 0 0 0;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #020617;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: #f8fafc;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+    nav a:hover { color: #eab308; }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h3 {
+      color: #eab308;
+      margin-bottom: 15px;
+    }
+    .card {
+      background: #000000;
+      padding: 25px;
+      border-radius: 16px;
+      margin-bottom: 25px;
+      border: 3px solid #eab308;
+      box-shadow: 0 0 15px rgba(234,179,8,0.4);
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+      font-family: inherit;
+    }
+    button {
+      background: #eab308;
+      color: #020617;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover { opacity: 0.9; }
+    .gallery img, .gallery video {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body><header id="hero">
+  <div class="overlay"></div>
+  <h1>حسینیة المهدیة عجل الله تعالی</h1>
+  <h2>حسینیة الامام المهدی (عجل الله تعالی فرجه)</h2>
+</header><nav>
+  <a href="#hero">صفحه اصلی</a>
+  <a href="#gallery">عکس‌ها و ویدیوها</a>
+  <a href="#news">اطلاعیه‌ها</a>
+  <a href="#hadith">احادیث</a>
+  <a href="#admin">مدیریت</a>
+</nav><section id="qr">
+  <div class="card" style="text-align:center">
+    <h3>اسکن برای دسترسی سریع</h3>
+    <img src="qr.png" alt="QR Code" style="max-width:260px; margin:15px auto" />
+    <p>با اسکن این بارکد به صفحه یا لینک مربوطه هدایت می‌شوید</p>
+  </div>
+</section><section id="about">
+  <div class="card">
+    <h3>درباره حسینیه</h3>
+    <p>
+      حسينية المهدية (الامام المهدي عجل الله تعالئ) تأسست عام 1435 هجري / 1393 شمسي،
+      في كوت عبدالله قرية كوت سيد صالح بجمع من المومنين لإحياء شعائر اهل البيت عليهم السلام.نقيم مناسبات اهل البيت (ع) مثل:
+  <ul>
+    <li>أحياء شهر محرم الحرام</li>
+    <li>أحياء شهر رمضان المبارك</li>
+    <li>أحياء أيام الفاطمية</li>
+    <li>وكل المناسبات الدينية والثقافية</li>
+  </ul>
+</p>
+
+  </div>
+</section><section id="audio">
+  <div class="card">
+    <h3>پخش صوت (روضه، دعا، سخنرانی)</h3>
+    <audio controls style="width:100%"></audio>
+    <p>بارگذاری فایل صوتی:</p>
+    <input type="file" accept="audio/*" onchange="loadAudio(event)" />
+  </div>
+</section><section id="gallery">
+  <div class="card">
+    <h3>گالری تصاویر و ویدیوها</h3>
+    <input type="file" accept="image/*,video/*" multiple onchange="loadMedia(event)" />
+    <div class="gallery" id="galleryBox">
+      <img src="karbala1.jpg" alt="کربلا">
+      <img src="ashura1.jpg" alt="عاشورا">
+      <img src="karbala2.jpg" alt="کربلا">
+      <img src="abbas.jpg" alt="حضرت ابوالفضل">
+    </div>
+  </div>
+</section><section id="hadith">
+  <div class="card">
+    <h3>احادیث اهل‌بیت علیهم‌السلام</h3>
+    <textarea id="hadithText" placeholder="متن حدیث را وارد کنید..."></textarea>
+    <button onclick="addHadith()">افزودن حدیث</button>
+    <div class="gallery" id="hadithList">
+      <img src="hadith1.jpg" alt="حدیث">
+      <img src="hadith2.jpg" alt="حدیث">
+    </div>
+  </div>
+</section><section id="news">
+  <div class="card">
+    <h3>اطلاعیه‌ها</h3>
+    <textarea id="newsText" placeholder="متن اطلاعیه را وارد کنید..."></textarea>
+    <button onclick="addNews()">افزودن اطلاعیه</button>
+    <div id="newsList"></div>
+  </div>
+</section><section id="admin">
+  <div class="card">
+    <h3>ورود مدیر سایت</h3>
+    <input type="password" id="adminPass" placeholder="رمز عبور مدیر" />
+    <button onclick="loginAdmin()">ورود</button>
+    <div id="adminPanel" style="display:none; margin-top:20px">
+      <h4>مدیریت تصاویر صفحه اول</h4>
+      <input type="file" accept="image/*" multiple onchange="addHeroImages(event)" />
+      <p style="font-size:0.9rem; color:#e5e7eb">عکس‌های انتخاب‌شده به اسلایدر اضافه می‌شوند</p>
+    </div>
+  </div>
+</section><footer>
+  <p>📍 المكان: الأهواز – كوت عبدالله – كوت سيد صالح</p>
+  <p>☎️ رقم التواصل: 09160638413</p>
+  © 2026 – حسینیة المهدیة (عجل الله تعالی فرجه الشریف)<br />
+  Al.mahdi
+</footer><script>
+  const images = ['karbala1.jpg', 'ashura1.jpg', 'karbala2.jpg', 'abbas.jpg'];
+  let index = 0;
+  const header = document.getElementById('hero');
+  header.style.backgroundImage = `url(${images[0]})`;
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    header.style.backgroundImage = `url(${images[index]})`;
+  }, 6000);
+
+  function loadAudio(e) {
+    const audio = document.querySelector('audio');
+    audio.src = URL.createObjectURL(e.target.files[0]);
+  }
+
+  function loadMedia(e) {
+    const box = document.getElementById('galleryBox');
+    for (let file of e.target.files) {
+      if (file.type.startsWith('image')) {
+        const img = document.createElement('img');
+        img.src = URL.createObjectURL(file);
+        box.appendChild(img);
+      } else if (file.type.startsWith('video')) {
+        const vid = document.createElement('video');
+        vid.src = URL.createObjectURL(file);
+        vid.controls = true;
+        box.appendChild(vid);
+      }
+    }
+  }
+
+  function loginAdmin() {
+    const pass = document.getElementById('adminPass').value;
+    if (pass === 'mahdi313') {
+      document.getElementById('adminPanel').style.display = 'block';
+      alert('ورود مدیر با موفقیت انجام شد');
+    } else {
+      alert('رمز عبور نادرست است');
+    }
+  }
+
+  function addHeroImages(e) {
+    for (let file of e.target.files) {
+      images.push(URL.createObjectURL(file));
+    }
+  }
+
+  function addHadith() {
+    const text = document.getElementById('hadithText').value;
+    if (!text) return;
+    const div = document.createElement('div');
+    div.className = 'card';
+    div.innerText = text;
+    document.getElementById('hadithList').prepend(div);
+    document.getElementById('hadithText').value = '';
+  }
+
+  function addNews() {
+    const text = document.getElementById('newsText').value;
+    if (!text) return;
+    const div = document.createElement('div');
+    div.className = 'card';
+    div.innerText = text;
+    document.getElementById('newsList').prepend(div);
+    document.getElementById('newsText').value = '';
+  }
+</script></body>
+</html>
